@@ -1,21 +1,77 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Charles Jimenez</title>
+    <link rel="icon" type="image/png" href="./img/logo.ico" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
     <header>
-        <a href="#inicio">Tu nombre</a>     
+        <h2><a href="#inicio"> Charles Jiménez</a></h2>
+        <nav>
+        <ul id="menu">
+        <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#hablemos">Hablemos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <!-- La estructura básica y la vinculación con CSS estan listas. A codear! 💪  -->
-    <!-- En este archivo escriban su HTML -->
+    <main>
+        <section id="inicio">
+      <figure>
+        <img id="foto" src="./img/CJ.jpg" alt="foto" />
+      </figure>
+ 
+      <h1>¡Hola! Soy Charles</h1>
+        <p>
+          Venezolano, Guaro de pura sepa, Apasionado por la familia, la cocina y
+          los video juegos. Amante de los animales
+        </p>
+        <br />
+        <button id="descarga">
+          <a class="boton" href="./Documento/CV.pdf" download="CV">
+            Descargar Mi CV</a>
+        </button>
+        <br>
+      </section>
 
-</body>
+      <section id="hablemos">
+        <h1>Hablemos</h1>
+        <p>
+          Me gusta cocinar, la tecnología y los deportes. Algunas cualidades que
+          me representan es la honestidad, el trabajo en equipo y la
+          organización. A lo largo de mi vida profesional y personal he
+          aprendido el manejo de las emociones y los serntimientos, disfruto lo
+          que hago y lo que hago lo hago con pasión. Me gustan los retos y
+          resolverlos los problemas desde otro punto de vista, me gusta ser
+          meticuloso y objetivo con mis desiciones.
+        </p>
+         </section>
+
+      <section id="contacto">
+        <a id="email" href="mailto:jimenezcharls@gmail.com"
+          ><img src="./img/mail.png" alt="email"
+        /></a>
+        <a id="in"
+          href="https://www.linkedin.com/in/charles-alberto-jimenez-quero/"
+          ><img src="./img/linkedin.png" alt="LinkedIn"
+        /></a>
+        <a id="git" href="https://github.com/CJ-23"
+          ><img src="./img/github.png" alt="github"
+        /></a>
+      </section>
+    </main>
+
+    <footer>
+      <h3>Codigo Pa' Lante</h3>
+    </footer>
+  </body>
 </html>

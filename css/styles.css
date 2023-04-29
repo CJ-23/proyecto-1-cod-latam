@@ -1,56 +1,142 @@
-/* En este archivo escriban su CSS */
 
-/* Fonts */
-/* Importar aquí la font */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 
 
-
-/* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
-*  cuyos valores asigna por defecto el navegador.
-*/
-
-/* Reset */
-* {
+body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     /* Para que el scrolleo en la one page sea suave */
     scroll-behavior: smooth;
+    background-color: #fffcfc;
+    font-family: 'Lato', sans-serif;
 }
 
-/* Para quitar los puntos a los items de listas */
 ul {
     list-style: none;
 }
 
-/* Para que los enlaces hereden el color de texto y no tengan subrayado */
 a {
     text-decoration: none;
     color: inherit;
 }
 
-/* Este max-width es para que el contenido no se "estire" demasiado hacia los costados y
-*  el margin: auto; para tenerlo centrado fácilmente ;)
-*/
+header{
+    background-color: #fbfbfb;
+    color: 0f0f0f;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    text-align: center;
+}
+
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    margin-right: 20px;
+}
+
+nav ul li:last-child{
+    margin-right: 40px;
+}
+
+nav ul li a{
+   font-weight: bold;
+   font-size: 20px;
+}
+
+section{
+    min-height: 100vh;
+}
+
 main {
     max-width: 1200px;
     margin: auto;
+    padding: 40px;
 }
 
-/* Recomendaciones! 
-*  - Comenzar desde lo más general y luego ir hacia lo mas específico, asignando primero
-*    "estilos generales". Una buena idea sería comenzar por el <body> ;)
-*
-*  - Recuerden que queremos evitar "repetir código", en CSS usando la cualidad de la herencia
-*    podemos setear ciertas propiedades en un elemento padre y dejar que sean heredadas (por ejemplo: font-size)
-*
-*  - Nadie sabe todas las propiedades CSS de memoria, si no saben como hacer algo no lo recuerdan, la respuesta
-*    pueden encontrarla buscando en la web algo como "CSS como hacer ... " o "propiedad css para hacer ..."
-*
-*  - Usen mucho las herramientas para desarrolladores del navegador para ir
-*    probando el CSS que escriben, resolver dudas y problemas.
-*
-*  - Paciencia, resiliencia y creatividad! No se desanimen, las primeras experiencias maquetando con HTML y CSS
-*    pueden ser frustrantes, pero estas habilidades se van desarrollando con la experiencia, es como aprender
-*    un trabajo manual, hacer una artesanía, tocar un instrumento musical... la práctica es todo!
-*/
+#foto{
+    max-width: 70%;
+    max-height: 70%;
+    border-radius: 50%;
+    display:flex;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#menu{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+h1{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 36px;
+}
+
+p{
+    font-size: 18px;
+    line-height: 1.2;
+    text-align: justify;
+}
+
+#descarga{
+    display: flex;
+    width: 30%;
+    height: 3vh;
+    background-color: rgb(143, 0, 179);
+    color: aliceblue;
+    border-radius: 15vh;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+}
+
+button{
+    border-style: none;
+    align-items: center;
+    text-align: center;
+}
+
+#hablemos{
+    background-color: rgba(175, 89, 158, 0.3);
+    color: #0f0f0f;
+    text-align: justify;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px;
+}
+
+#contacto{
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-left: auto;
+}
+
+img {
+    display: flex;
+    max-width: 60%;
+    padding: 0%;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+footer{
+    background-color: #af599e;
+    height: 90px;
+}
+
+footer h3{
+    text-align: center;
+    padding: 20px;
+}
